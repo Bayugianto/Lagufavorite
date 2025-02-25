@@ -1,0 +1,19 @@
+
+.logo-musik {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px; /* Sesuaikan ukuran logo */
+    height: auto;
+    z-index: 1000; /* Agar selalu di atas elemen lain */
+  }
+
+  .foto-artis {
+    width: 150px; /* Ukuran gambar */
+    height: 150px;
+    border-radius: 100%; /* Bikin bulat */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    display: block;
+    margin: 0 auto 10px; /* Tengah & beri jarak ke bawah */
+   
+}

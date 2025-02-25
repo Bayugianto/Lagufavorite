@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayu Lagu</title>
+    <link rel="icon" type="image/png" href="./img/b.png">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="bg-succses"></body>
+  <img src="./img/b.png" alt="Logo Musik" class="logo-musik">
+
+  <audio id="pemutarlagu"></audio>
+    <!-- awal navbar -->
+    <nav class="navbar navbar-dark bg-secondary">
+         <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1"></span>
+              <button type="button" class="btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Playlist 
+              </button>
+              <button onclick="laguSebelum()" type="button" class="btn btn-sucondary">Prev</button>
+              <button type="button" class="btn btn-sucondary">Pause</button>
+              <button onclick="laguBerikut()" type="button" class="btn btn-sucondary">Next</button>
+        </div>
+    </nav>
+
+
+    <!--INI MODAL UNTUK PRINT LIST LAGU-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Daftar Lagu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- INI LIST LAGU -->
+              <div id="Playlist">
+                
+              </div>
+              <!-- AKHIR LIST LAGU -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--INI AKHIR MODAL-->
+
+
+<!-- ini card isi lirik lagu -->
+<center>
+  <div class="card" style="width: 80%;">
+      <div class="card-body">
+        <img src="./img/g.png" alt="Foto Artis" class="foto-artis">
+        <h5 id="artis" class="card-title">Card title</h5>
+        <h6 id="judul" class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p id="lirik" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+</center>
+
+<!-- akhir card -->
+
+
+<script src="./pemutar.js"></script>
+
+</body>
+</html>
